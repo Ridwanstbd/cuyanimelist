@@ -1,9 +1,10 @@
-import Image from 'next/image'
-
-export default function Home() {
-  return (
+import AnimeList from "./components/AnimeList";
+const Home = () => {
+return (
     <div>
     <h1>CUYANIMELIST</h1>
+    <AnimeList />
     </div>
   )
 }
+export default Home;
