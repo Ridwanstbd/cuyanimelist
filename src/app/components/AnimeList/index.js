@@ -1,8 +1,11 @@
-const AnimeList = () => {
+import Image from "next/image";
+
+const AnimeList = ({title, images}) => {
     return (
-        <div>
-        <h1>Ini daftar Anime List COMPONENT</h1>
-        </div>
+            <div className="bg-indigo-500">
+            <Image src={images} alt="..." width={600} height={600} />
+            <h3>{title}</h3>
+            </div>
     )
 }
 export default AnimeList;
